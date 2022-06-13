@@ -181,13 +181,13 @@ button {
 .envelope {
   width: 16px;
   height: 12px;
-  background-color: red;
+  margin-right: 10px;
 }
 
 .smartphone {
   width: 10px;
   height: 16px;
-  background-color: red;
+  margin-right: 10px;
 }
 
 /* Hero */

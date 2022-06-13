@@ -178,6 +178,18 @@ button {
   color: var(--accent-color);
 }
 
+.envelope {
+  width: 16px;
+  height: 12px;
+  background-color: red;
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+  background-color: red;
+}
+
 /* Hero */
 .hero {
   padding: 200px 0;

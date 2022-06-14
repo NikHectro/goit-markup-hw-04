@@ -178,13 +178,25 @@ button {
   color: var(--accent-color);
 }
 
-.envelope {
+.button-icon {
+  padding: 0;
+  border: none;
+}
+
+.envelope .button-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
 
-.smartphone {
+.contacts-item:hover .envelope .button-icon,
+.contacts-item:focus .envelope .button-icon,
+.contacts-item:hover .smartphone .button-icon,
+.contacts-item:focus .smartphone .button-icon {
+  fill: var(--accent-color);
+}
+
+.smartphone .button-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -255,6 +267,22 @@ button {
 
 .feature-block + .feature-block {
   margin-left: 30px;
+}
+
+.icon-block {
+  display: inline-flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-feature {
+  width: 70px;
+  height: 70px;
 }
 
 /* Areas */

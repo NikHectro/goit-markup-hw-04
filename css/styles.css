@@ -178,28 +178,23 @@ button {
   color: var(--accent-color);
 }
 
-.button-icon {
-  padding: 0;
-  border: none;
-}
-
-.envelope .button-icon {
+.icon-contacts.envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
-.contacts-item:hover .envelope .button-icon,
-.contacts-item:focus .envelope .button-icon,
-.contacts-item:hover .smartphone .button-icon,
-.contacts-item:focus .smartphone .button-icon {
-  fill: var(--accent-color);
-}
-
-.smartphone .button-icon {
+.icon-contacts.smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.contacts-item:hover .icon-contacts,
+.contacts-item:focus .icon-contacts {
+  fill: var(--accent-color);
 }
 
 /* Hero */
@@ -356,6 +351,18 @@ button {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+/* Social-net icons */
+.soc-bocks {
+  width: 44px;
+  height: 44px;
+  background-color: red;
+}
+
+.soc-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* Button */

@@ -330,7 +330,6 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  overflow: hidden;
 }
 
 .name {
@@ -379,14 +378,14 @@ button {
 
 .soc-icon {
   display: block;
-  width: 20px;
-  height: 20px;
+  /* width: 20px;
+  height: 20px; */
   fill: #afb1b8;
 }
 
 .soc-link:hover,
 .soc-link:focus {
-  outline: none;
+  outline: transparent;
   background-color: var(--accent-color);
 }
 
@@ -448,21 +447,21 @@ button {
   display: flex;
 }
 
-.clients .element {
-  box-shadow: none;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
-
 .client-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 92px;
   fill: #afb1b8;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
+.clients .element {
+  box-shadow: none;
+}
 .client-icon {
   width: 106px;
   height: 60px;
@@ -473,8 +472,9 @@ button {
 .client-link:focus .client-icon {
   fill: var(--accent-color);
 }
-.client-link:hover .element,
-.client-link:focus .element {
+.client-link:hover,
+.client-link:focus {
+  outline: transparent;
   border: 1px solid var(--accent-color);
 }
 
